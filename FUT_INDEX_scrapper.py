@@ -60,3 +60,5 @@ while True:
 import yfinance as yf
 data = yf.download(tickers='UBER', period='1d', interval='1d')
 print(data)
+
+# sub folder is updated
