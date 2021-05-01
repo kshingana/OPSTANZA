@@ -4,7 +4,7 @@ import json
 import pandas as pd
 import sqlite3
 
-expiry_dt = '22-Apr-2021'
+expiry_dt = '06-May-2021'
 
 
 conn = sqlite3.connect('data/stock.db')
@@ -16,7 +16,7 @@ symbols = ['BANKNIFTY', 'NIFTY']
 def start_fetching():
     for symbol in symbols:
         fetch_nse_data(symbol)
-    time.sleep(180)
+    time.sleep(190)
 
 
 def create_schemas():
